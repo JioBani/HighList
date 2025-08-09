@@ -4,16 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="020231b7-0053-40de-83b0-aeb424424593" name="변경" comment="" />
+    <list default="true" id="020231b7-0053-40de-83b0-aeb424424593" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HighList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HighList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/NodeGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/NodeGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/NodeGeneratorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/NodeGeneratorEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinderNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/Prefebs/PathFinderNode.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Common/Packages/PathFinder/Prefebs/PathFinderNode.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinderNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@089d78c497f7/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Common/Packages/Heap/MinHeap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Common/Packages/PathFinder/PathFinderNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Common/Packages/PathFinder/Tests/PathFinderUTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@089d78c497f7/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@7056e7f856e9/UnityEditor.TestRunner/GUI/TestAssets/ActiveFolderTemplateAssetCreator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce25f60185214755aecd20f4c928c90e1eae00/53/a41de137/BoundsInt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -26,7 +44,9 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,13 +115,24 @@
       <option name="presentableId" value="Default" />
       <updated>1753534957685</updated>
       <workItem from="1753534959145" duration="3021000" />
-      <workItem from="1753613051446" duration="649000" />
+      <workItem from="1753613051446" duration="3588000" />
+      <workItem from="1753707504924" duration="3126000" />
+      <workItem from="1753879906443" duration="3357000" />
+      <workItem from="1754057828217" duration="1765000" />
+      <workItem from="1754063965567" duration="2404000" />
+      <workItem from="1754139372864" duration="7647000" />
+      <workItem from="1754213671971" duration="5279000" />
+      <workItem from="1754230092543" duration="5109000" />
+      <workItem from="1754308216758" duration="2257000" />
+      <workItem from="1754316637758" duration="911000" />
+      <workItem from="1754741271048" duration="4473000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />

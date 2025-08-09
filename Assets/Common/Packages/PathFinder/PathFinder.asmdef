@@ -1,0 +1,16 @@
+{
+    "name": "PathFinder",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c80a55c2da555e64db695dc8f28902c3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
