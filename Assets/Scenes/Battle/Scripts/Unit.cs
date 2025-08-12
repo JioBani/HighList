@@ -5,26 +5,15 @@ using UnityEngine;
 namespace Scenes.Battle.Scripts
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Unit : MonoBehaviour
+    public class Unit : MonoBehaviour, Movable
     {
-        private Rigidbody2D rigidbody2D;
+        private Rigidbody2D _rigid;
         public Vector2 destination;
         public float speed;
         
         void Awake()
         {
-            rigidbody2D = GetComponent<Rigidbody2D>();
-        }
-
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            _rigid = GetComponent<Rigidbody2D>();
         }
 
         void FixedUpdate()
@@ -32,17 +21,16 @@ namespace Scenes.Battle.Scripts
             Move(destination);
         }
 
-        void Move(Vector2 _destination)
+        public void Move(Vector2 _destination)
         {
-            // TODO 대각선 이동의 경우 speed 가 더 빨라지는 현상 해결
             if (Vector2.Distance(_destination, transform.position) > 0.01f)
             {
                 Vector2 towards = _destination - (Vector2)transform.position;
-                rigidbody2D.linearVelocity = towards.normalized * speed;
+                _rigid.linearVelocity = towards.normalized * speed;
             }
             else
             {
-                rigidbody2D.linearVelocity = Vector2.zero;
+                _rigid.linearVelocity = Vector2.zero;
             }
         }
     }
