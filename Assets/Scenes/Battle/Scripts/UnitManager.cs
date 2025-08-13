@@ -38,8 +38,8 @@ namespace Scenes.Battle.Scripts
         protected override void Awake()
         {
             base.Awake();
-            units[Faction.Ally] = allies.Select(unit => new TransformUnitPair(unit.transform, unit)).ToList();
-            units[Faction.Enemy] = enemies.Select(unit => new TransformUnitPair(unit.transform, unit)).ToList();
+            units[Faction.Ally] = allies?.Select(unit => new TransformUnitPair(unit.transform, unit)).ToList() ?? new ();
+            units[Faction.Enemy] = enemies?.Select(unit => new TransformUnitPair(unit.transform, unit)).ToList() ?? new ();
         }
 
         /**
@@ -50,6 +50,9 @@ namespace Scenes.Battle.Scripts
         public Unit FindTarget(Faction faction, Vector2 position, float range)
         {
             List<TransformUnitPair> targets = units[faction == Faction.Ally ? Faction.Enemy :  Faction.Ally];
+            
+            if (targets == null || targets.Count == 0)
+               return null;
             
             TransformUnitPair min = targets.OrderBy((pair) => pair.CirculateDistance2(position)).First();
             
