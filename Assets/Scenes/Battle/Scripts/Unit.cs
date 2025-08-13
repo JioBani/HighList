@@ -1,5 +1,4 @@
-using System;
-using Common.Packages.PathFinder;
+using Scenes.Battle.Scripts.Enums;
 using UnityEngine;
 
 namespace Scenes.Battle.Scripts
@@ -10,10 +9,26 @@ namespace Scenes.Battle.Scripts
         private Rigidbody2D _rigid;
         public Vector2 destination;
         public float speed;
+        public UnitInfo unitInfo;
+        public Unit target;
+        private UnitManager unitManager;
         
         void Awake()
         {
             _rigid = GetComponent<Rigidbody2D>();
+            
+            // 임시 unit 정보
+            unitInfo = new UnitInfo(
+                Faction.Ally,
+                5.0f
+            );
+            
+            Init(UnitManager.Instance);
+        }
+
+        void Init(UnitManager unitManager)
+        {
+            this.unitManager = unitManager;
         }
 
         void FixedUpdate()
@@ -32,6 +47,15 @@ namespace Scenes.Battle.Scripts
             {
                 _rigid.linearVelocity = Vector2.zero;
             }
+        }
+
+        private void FindTarget()
+        {
+            target = unitManager.FindTarget(
+                faction: unitInfo.faction,
+                position: transform.position,
+                range:  unitInfo.range
+            );
         }
     }
 }
